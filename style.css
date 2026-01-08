@@ -15,3 +15,11 @@
   --content-width: 936px;
   --content-width-lg: 1080px;
 }
+
+.section-title {
+    font-size: 32px;
+}
+
+.section-sub {
+    font-size: 14px;
+}
