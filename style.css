@@ -30,6 +30,66 @@ body {
 
 .section-sub {
   font-size: 14px;
+}
+
+/* service */
+.top-service {
+  background: rgba(36, 36, 36, 0.6);
+}
+
+.top-service-txt {
+  padding: 60px 0 80px;
+}
+
+.top-service-main {
+  font-size: 32px;
+  color: var(--gray-color);
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.top-service-sub {
+  font-size: 14px;
+  color: var(--gray-color);
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.top-service-img {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.top-service-box {
+  background: var(--gray-color04);
+  margin-top: 64px;
+  display: inline-block;
+}
+
+.top-service-text {
+  padding: 32px;
+}
+
+.top-service-ttl {
+  font-size: 20px;
+  font-family: "Abyssinica SIL", serif;
+  color: var(--gray-color);
+  padding-bottom: 42px;
+}
+
+.top-service-list {
+  list-style: disc;
+  padding-left: 1.2em;
+}
+
+.top-service-item {
+  color: var(--gray-color);
+  font-family: "Cinzel", serif;
 
 /* ---------- utility ---------- */
 
