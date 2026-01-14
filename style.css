@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+}
 
 body {
   font-family: "Cinzel", serif;
@@ -26,6 +30,47 @@ body {
 
 .section-sub {
   font-size: 14px;
+
+/* ---------- utility ---------- */
+
+@media screen and (min-width: 375px) {
+  .u_sm-dn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .u_lg-dn {
+    display: none;
+  }
+}
+
+/* ---------- layout ---------- */
+
+.l_container-sm,
+.l_container,
+.l_container-lg {
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.l_container-sm {
+  max-width: calc(var(--content-width-sm) + 32px);
+}
+
+.l_container {
+  max-width: calc(var(--content-width) + 32px);
+}
+
+.l_container-lg {
+  max-width: calc(var(--content-width-lg) + 32px);
+}
+
+body {
+  margin: 0;
+  color: var(--black-color);
+  background: var(--base-color);
 }
 
 /* header */
