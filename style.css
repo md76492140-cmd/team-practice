@@ -16,6 +16,18 @@
   --content-width-lg: 1080px;
 }
 
+/* kv */
+.top_kv{
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/sp-kv.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
 .top_kv_copy{
   font-size: 24px;
   font-weight: bold;
