@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  font-family: "Cinzel", serif;
+}
 
 :root {
   --white-color: #fafafa;
@@ -82,4 +90,149 @@
 .top-service-item {
   color: var(--gray-color);
   font-family: "Cinzel", serif;
+
+/* ---------- utility ---------- */
+
+@media screen and (min-width: 375px) {
+  .u_sm-dn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .u_lg-dn {
+    display: none;
+  }
+}
+
+/* ---------- layout ---------- */
+
+.l_container-sm,
+.l_container,
+.l_container-lg {
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.l_container-sm {
+  max-width: calc(var(--content-width-sm) + 32px);
+}
+
+.l_container {
+  max-width: calc(var(--content-width) + 32px);
+}
+
+.l_container-lg {
+  max-width: calc(var(--content-width-lg) + 32px);
+}
+
+body {
+  margin: 0;
+  color: var(--black-color);
+  background: var(--base-color);
+}
+
+/* header */
+
+.l_header {
+  background: var(--gray-color03);
+  font-size: 24px;
+  height: 667px;
+  width: 100%;
+  padding-top: 140px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1080px) {
+  .l_header {
+    padding: 18px 48px;
+  }
+}
+
+.l_header-nav {
+  display: none;
+}
+
+@media screen and (min-width: 1080px) {
+  .l_header-nav {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .l_header-nav_list {
+    display: flex;
+    gap: 0 48px;
+  }
+}
+
+.l_header-nav-list_item {
+  text-align: center;
+}
+
+@media screen and (min-width: 1080px) {
+  .l_header-nav-list_item {
+    color: var(--white-color);
+    font-weight: normal;
+  }
+}
+
+.l_header-nav-list_item:not(:first-child) {
+  margin-top: 48px;
+}
+
+@media screen and (min-width: 1080px) {
+  .l_header-nav-list_item:not(:first-child) {
+    margin-top: 0;
+  }
+}
+
+.l_header-txtbox {
+  display: flex;
+  padding: 40px;
+}
+
+.l_header-txt {
+  color: var(--base-color);
+  position: relative;
+  margin-left: 200px;
+}
+
+/* hamburger */
+
+.m_hamburger {
+  width: 20px;
+  height: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (min-width: 1080px) {
+  .m_hamburger {
+    display: none;
+  }
+}
+
+.m_hamburger-bar {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background: #d9d9d9;
+  left: 50%;
+}
+
+.m_hamburger-bar:first-child {
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+.m_hamburger-bar:nth-child(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.m_hamburger-bar:last-child {
+  top: 100%;
+  transform: translate(-50%, -100%);
 }
