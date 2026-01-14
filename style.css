@@ -27,8 +27,8 @@
   position: relative;
 }
 
-
 .top_kv_copy{
+  font-family: "Cinzel", serif;
   font-size: 24px;
   font-weight: bold;
   color: var(--white-color);
