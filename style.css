@@ -16,6 +16,16 @@
   --content-width-lg: 1080px;
 }
 
+.top_kv_copy{
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white-color);
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+
 .section-title {
     font-size: 32px;
 }
