@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+:root {
+  --white-color: #fafafa;
+  --black-color: #333;
+  --base-color: #f5f3f2;
+  --gray-color: #F0F0F0;
+  --gray-color02: #aaa;
+  --gray-color03: #787776;
+  --gray-color04: #4f4f4f;
+}
+
+:root {
+  --content-width-sm: 800px;
+  --content-width: 936px;
+  --content-width-lg: 1080px;
+}
+
+/* kv */
+.top_kv{
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/sp-kv.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.top_kv_copy{
+  font-family: "Cinzel", serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white-color);
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+
+.section-title {
+    font-size: 32px;
+}
+
+.section-sub {
+    font-size: 14px;
+}
